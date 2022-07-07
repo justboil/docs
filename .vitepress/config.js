@@ -5,6 +5,8 @@ export default defineConfig({
   title: 'JustBoil Vue Tailwind Docs (wip)',
   description: 'Docs for Vue.js Tailwind dashboard',
 
+  base: '/docs/',
+
   lastUpdated: true,
 
   themeConfig: {
