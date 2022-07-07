@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   lang: 'en-US',
   title: 'JustBoil Vue Tailwind Docs (wip)',
   description: 'Docs for Vue.js Tailwind dashboard',
@@ -32,7 +34,7 @@ export default {
     //   indexName: 'vitepress'
     // }
   }
-}
+})
 
 function nav() {
   return [
