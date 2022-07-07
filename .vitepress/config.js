@@ -1,6 +1,6 @@
 export default {
   lang: 'en-US',
-  title: 'JustBoil.me Docs',
+  title: 'JustBoil Vue Tailwind Docs (wip)',
   description: 'Docs for Vue.js Tailwind dashboard',
 
   lastUpdated: true,
@@ -9,13 +9,12 @@ export default {
     nav: nav(),
 
     sidebar: {
-      '/': sidebarRoot(),
-      '/config/': sidebarSecond()
+      '/': sidebarMain(),
     },
 
     editLink: {
       pattern: 'https://github.com/justboil/docs/edit/master/:path',
-      text: 'Edit this page on GitHub!'
+      text: 'Edit this page on GitHub'
     },
 
     socialLinks: [
@@ -23,7 +22,7 @@ export default {
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
+      // message: 'Docs are released under the MIT License.',
       copyright: 'Copyright © 2019-present JustBoil.me'
     },
 
@@ -37,29 +36,29 @@ export default {
 
 function nav() {
   return [
-    { text: 'Link', link: '/', activeMatch: '/' }
+    // { text: 'JustBoil.me', link: '/free/', activeMatch: '/free/' }
+    { text: 'JustBoil.me', link: 'https://justboil.me' }
   ]
 }
 
-function sidebarRoot() {
+function sidebarMain() {
   return [
     {
       text: 'Introduction',
       collapsible: true,
       items: [
-        { text: 'Item', link: '/link' },
+        { text: 'About', link: '/' },
+        { text: 'Getting started', link: '/basics/getting-started.html' },
       ]
     },
-  ]
-}
-
-function sidebarSecond() {
-  return [
     {
-      text: 'Title',
+      text: 'Customization',
+      collapsible: true,
       items: [
-        { text: 'Item 2', link: '/link-2' },
+        { text: 'Basic things', link: '/customization/' },
+        { text: 'Free version specifics', link: '/customization/free.html' },
+        { text: 'Premium version specifics', link: '/customization/premium.html' },
       ]
-    }
+    },
   ]
 }
