@@ -83,17 +83,19 @@ Favicon file is located in `public/favicon.png`. It's set with basic link tag, b
 
 It's likely, you'll use only one app style, either `basic` or one of listed in `src/styles.js`. So, let's just set one of choice.
 
-### src/main.js
+### src/main.js (or resources/js/app.js for Laravel)
 
 ```js
 // styleKey is no longer needed, so remove it from @/config.js import
+// import { darkModeKey, styleKey } from '@/config.js'
 import { darkModeKey } from '@/config.js'
 
-// Remove action argument, and follow next step
+// Remove setStyle action argument
+// styleStore.setStyle(localStorage[styleKey] ?? 'basic')
 styleStore.setStyle()
 ```
 
-### src/stores/style.js
+### src/stores/style.js (or resources/js/stores/style.js for Laravel)
 
 Here we just import the only required style object and set it via store:
 
@@ -110,11 +112,8 @@ export const useStyleStore = defineStore('style', {
     // ...
   }),
   actions: {
-    // Simplify setStyle action
+    // Set imported style
     setStyle () {
-      // For free version, uncomment this body className setter:
-      // document.body.className = styleDefault.body
-
       for (const key in styleDefault) {
         this[`${key}Style`] = styleDefault[key]
       }
