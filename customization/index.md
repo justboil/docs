@@ -105,6 +105,7 @@ Here we just import the only required style object and set it via store:
 import { basic as styleDefault } from '@/styles.js'
 
 // styleKey is no longer needed, so remove it from @/config.js import
+// import { darkModeKey, styleKey } from '@/config.js'
 import { darkModeKey } from '@/config.js'
 
 export const useStyleStore = defineStore('style', {
