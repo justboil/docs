@@ -15,35 +15,31 @@ To make the link work, either `to` or `href` should be set. Icon is optional, bu
 
 ```js
 export default [
-  // Group label is optional
-  'Group label'
-  [
-    {
-      // RouterLink path
-      to: '/dashboard',
+  {
+    // RouterLink path
+    to: '/dashboard',
 
-      // ... or external link href
-      href: 'https://justboil.me',
+    // ... or external link href
+    href: 'https://justboil.me',
 
-      // Target (optional)
-      target: '_blank',
+    // Target (optional)
+    target: '_blank',
 
-      // Icon (optional)
-      icon: mdiDesktopMac,
+    // Icon (optional)
+    icon: mdiDesktopMac,
 
-      // Menu item label
-      label: 'Dashboard',
+    // Menu item label
+    label: 'Dashboard',
 
-      // Dropdown menu (optional)
-      menu: [],
+    // Dropdown menu (optional)
+    menu: [],
 
-      // Secondary menu  (optional)
-      menuSecondary: [],
+    // Secondary menu  (optional)
+    menuSecondary: [],
 
-      // Key. Required if using secondaryMenu
-      key: 'secondary-1'
-    }
-  ]
+    // Key. Required if using secondaryMenu
+    key: 'secondary-1'
+  }
 ]
 ```
 
