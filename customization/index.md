@@ -100,7 +100,7 @@ styleStore.setStyle()
 Here we just import the only required style object and set it via store:
 
 ```js
-// Replace @/styles.js import 
+// Replace @/styles.js import
 // Import either `basic` or any other style of choice
 import { basic as styleDefault } from '@/styles.js'
 
