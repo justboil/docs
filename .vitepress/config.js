@@ -60,8 +60,8 @@ function sidebarMain() {
       collapsible: true,
       items: [
         { text: 'Basic things', link: '/customization/' },
-        { text: 'Free version specifics', link: '/customization/free.html' },
-        { text: 'Premium version specifics', link: '/customization/premium.html' },
+        // { text: 'Free version specifics', link: '/customization/free.html' },
+        // { text: 'Premium version specifics', link: '/customization/premium.html' },
       ]
     },
   ]

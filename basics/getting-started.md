@@ -72,6 +72,10 @@ ESLint editor integrations are useful to check your code in real-time.
 npm run lint
 ```
 
+## Nuxt 3.x integration
+
+This dashboard can be integrated with Nuxt 3.x. [Check guide](https://github.com/justboil/admin-one-vue-tailwind/tree/master/.nuxt-guide) for more information
+
 ## Laravel 9.x integration
 
-This dashboard can be integrated with Laravel 9.x Jetstream Inertia + Vue.js stack. [Check guide](https://github.com/justboil/admin-one-vue-tailwind/tree/master/.laravel-guide) for more information
+This dashboard can be integrated with Laravel 9.x Breeze Inertia + Vue.js stack. [Check guide](https://github.com/justboil/admin-one-vue-tailwind/tree/master/.laravel-guide) for more information
